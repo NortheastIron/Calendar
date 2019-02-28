@@ -1,0 +1,289 @@
+@font-face{
+	font-family: MyriadPro;
+	src: url(../font/MyriadPro-Regular.ttf), 
+	url(../font/MyriadPro-Regular.eot),
+	url(../font/MyriadPro-Regular.woff);
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+  	display: flex;
+}
+button{
+	cursor: pointer;
+}
+.flex{
+	display: flex;
+}
+.flex-row-wrap{
+	display: flex;
+	flex-flow: row wrap;
+}
+.flex-jc-center{
+	justify-content: center;
+}
+.flex-jc-sa{
+	justify-content: space-around;
+}
+.flex-jc-sb{
+	justify-content: space-between;
+}
+.flex-ai-center{
+	align-items: center;
+}
+.flex-ac-center{
+	align-content: center;
+}
+.flex-flow-col{
+	flex-flow: column;
+}
+.margin-auto{
+	margin: 0 auto;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #efefef;
+	font-family: MyriadPro;
+}
+.container{
+	width: 90%;
+	margin: 0 auto;	
+}
+.slider-container{
+	width: 100%;
+	margin-top : 40px;
+	margin-bottom: 20px;
+}
+
+.slider-container button{
+	border: none;
+	background-color: #efefef;
+	font-size:30px;
+	transition: color .5s;
+}
+.slider-container button:hover{
+	color: #6c6ac1;
+}
+.slider p{
+	margin-left: 35px;
+	margin-right: 35px;
+	font-size: 40px;
+	width: 280px;
+	text-align: center;
+}
+.medium-container{
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+.location{
+	margin-right: 10px;
+}
+.location input{
+	width: 300px;	
+	font-size: 25px;
+}
+.calendar{
+	font-size: 20px;
+}
+.calendar table{
+	border-collapse:collapse;
+}
+.calendar td{
+	border: 2px solid #9e9e9e;
+	height: 50px;
+	width: 50px;
+
+}
+.calendar tr{
+	position: relative;
+}
+.calendar a{
+	padding: 5px 50px 5px 10px ;
+	box-sizing: border-box;
+	display: block;
+	height: 100%;
+	width: 100%;
+	color:#000;
+	transition: background-color .5s;
+
+}
+.calendar a:hover{
+	background-color: #baf0da;
+}
+.check{
+	position: relative;
+}
+.calendar img{
+	position: absolute;
+	width: 50px;
+	top: 10px;
+	right: 0px;
+}
+.weekday td{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 20px;
+	vertical-align: top;
+}
+.today-month{
+	background-color:#ea9999;
+}
+.another-month{
+	background-color: #d9d9d9;
+}
+.organizer-container{
+	width: 100%;
+	border: 1px solid #000;
+}
+.organizer-container h3{
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	font-size: 40px;
+	font-weight: 100;
+}
+.organizer-container ul{
+	margin-bottom: 10px;
+}
+.organizer-container li{
+	width: 90%;
+	margin: 0 auto;
+	border: 1px solid #9e9e9e;
+	font-size:30px;
+}
+.organizer-container .number{
+	border-right: 1px solid #9e9e9e;
+	padding-right: 30px;
+	padding-left: 5px;
+	width: 7%;
+}
+.organizer-container .task{
+	width: 83%;
+	border-right: 1px solid #9e9e9e;
+	padding-left: 10px;
+}
+.organizer-container button{
+	
+	border: 1px solid #000;
+	background-color: #efefef;
+	font-size:20px;
+	padding: 10px 30px 10px 10px;
+}
+
+.organizer-container li button{
+	width: 10%;
+	padding: 5px 5px 5px 5px;
+	border: none;
+
+}
+#delete_Button{
+	transition: background-color .5s;
+}
+#delete_Button:hover{
+	background-color: #f2090e;
+}
+.organizer-footer{
+	width:90%;
+	margin: 0 auto;
+}
+.organizer-footer button{
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+#task_Input{
+	margin-left: 0px;
+	margin-bottom: 10px;
+	font-size:20px;
+	line-height: 40px;
+	width: 40vw;
+}
+#add_Task_Button{
+	margin-left: 10px;
+	transition: background-color .5s;
+}
+#add_Task_Button:hover{
+	background-color: #ea9999;
+}
+#reset_Button{
+	margin-right: 10px;
+	transition: background-color .5s;
+}
+#reset_Button:hover{
+	background-color: #a1ea99;
+}
+#save_Button{
+	transition: background-color .5s;
+}
+#save_Button:hover{
+	background-color: #cfe2f3;
+}
+@media screen and (max-width: 768px){
+	.slider-container {
+    margin-top: 20px;
+	}
+	.slider-container h3 {
+    font-size: 30px;
+	}
+	.slider p {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 30px;
+    width: 210px;
+	}
+	.location input {
+    font-size: 20px;
+	}
+	.weekday td {
+    padding-right: 5px;
+	}
+	.calendar a {
+    padding: 5px 30px 5px 10px;
+	}
+	.organizer-container h3 {
+    	font-size: 30px;
+	}
+	.organizer-container li {
+    	font-size: 20px;
+	}
+	.organizer-container li button {
+    	padding: 3px 5px 2px 5px;
+	}
+	#task_Input {
+    	font-size: 15px;
+   	 	line-height: 25px;
+	}
+	.organizer-container button {
+    font-size: 15px;
+    padding: 5px 20px 5px 10px;
+	}
+}
+@media screen and (max-width: 420px){
+	.medium-container{
+		flex-direction: column;
+	}
+	.location{
+		margin: 0 auto;
+	}
+	.location input {
+		margin-bottom: 10px;
+	}
+	.calendar{
+		margin: 0 auto;
+	}
+	.calendar a {
+    	padding: 5px 25px 5px 5px;
+	}
+	.organizer-container li button {
+    width: 16%;
+	}
+	.organizer-container .task {
+    width: 77%;
+	}
+}
