@@ -69,11 +69,11 @@ function calendar(){
 		var mount_array = new Array ("January","February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
 		var td_d = document.getElementsByTagName("td");
 		var last_td_d;
-		console.log(first_wday);
+
 		for (var i = 1;i < 8;i++) {
 		
 			if (i == first_wday) {
-				console.log("tyt");
+				
 				for (var j=0;j<mount_last_date;j++){
 					td_d[6+i+j].innerHTML = '<a href="#">'+(1+j)+'</a>';
 					if(td_d[6+i+j].classList.contains('another-month')){
