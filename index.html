@@ -6,107 +6,103 @@
 	<link rel="stylesheet" href="css\style.css">
 </head>
 <body>
-	<div class="container ">
-		<div class="slider-container flex flex-jc-center">
-			<button class="prev">&#8592</button>
-			<div class="slider flex flex-jc-center">
-				<p id="month_year"></p>
-			</div>
-			<button class="next">&#8594</button>
+	<header>
+		<div class="container slider-container flex flex-jc-center">
+				<button class="prev">&#8592</button>
+				<p id="month_year">March 2019</p>
+				<button class="next">&#8594</button>
 		</div>
-		<div class="medium-container">
-			<div class="location">
-				<input type="text" id="location_Input" placeholder="Location">
-			</div>
-			<div class="calendar">
-				<table id="table_Calendar">
-					<tbody>
-					<tr class="weekday">
-						<td>Mon</td>
-						<td>Tue</td>
-						<td>Wed</td>
-						<td>Thu</td>
-						<td>Fri</td>
-						<td>Sat</td>
-						<td>Sun</td>
-					</tr>
-					<tr>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-					</tr>
-					<tr>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-					</tr>
-					<tr>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-					</tr>
-					<tr>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-					</tr>
-					<tr>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-					</tr>
-					<tr>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-						<td><a href="#"></a></td>
-					</tr>
-					</tbody>
-				</table>
-			</div>
+	</header>
+	
+	<section class="medium-container flex flex-jc-center">
+		<div class="location">
+			<input type="text" id="location_Input" placeholder="Location">
 		</div>
-		<div class="organizer-container">
+			<table id="table_Calendar">
+				<tbody>
+				<tr class="weekday">
+					<td>Mon</td>
+					<td>Tue</td>
+					<td>Wed</td>
+					<td>Thu</td>
+					<td>Fri</td>
+					<td>Sat</td>
+					<td>Sun</td>
+				</tr>
+				<tr>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+				</tr>
+				<tr>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+				</tr>
+				<tr>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+				</tr>
+				<tr>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+				</tr>
+				<tr>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+				</tr>
+				<tr>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+				</tr>
+				</tbody>
+			</table>
+	</section>
+	<footer>
 			<h3>Organizer</h3>
 			<ul class="tasks">
-				<li class = "flex flex-ai-center"><p class="number">1</p><p class="task">Task</p><button id = 'delete_Button' value='delete'>delete</button></li>
+				<li class="flex flex-ai-center"><p class="number">1</p><p>Task</p><button id = 'delete_Button' value='delete'>delete</button></li>
+				<li class="flex flex-ai-center"><p class="number">2</p><p>Task</p><button id = 'delete_Button' value='delete'>delete</button></li>
 			</ul>
-			
-			<div class="organizer-footer flex flex-jc-sb flex-ai-center flex-ac-center">
-				<div>
+			<div class="organizer-footer flex-row-wrap flex-jc-sb flex-ai-center flex-ac-center">
+				<div class="flex flex-jc-sb flex-ai-center flex-ac-center">
 				<input type="text" id="task_Input" placeholder="Your task">
 				<button id="add_Task_Button">Add</button>
 				</div>
-				<div>
+				<div class="flex flex-jc-sa flex-ai-center flex-ac-center">
 				<button id="reset_Button">Reset</button>
 				<button id="save_Button">Save</button>
 				</div>
 			</div>
-			
-		</div>
-	</div>
+	</footer>
 	<script
         src="http://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
